@@ -1,0 +1,25 @@
+.company-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .company-container{
+        padding: 32px 0px 32px 0px;
+        text-align: center;
+        width:1440px;
+
+        .company-content {
+            padding: 32px;
+            background-color: var(--primary-color);
+            border-radius: 32px;
+
+
+            .company-heading {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    padding: 0px, 80px, 0px, 80px;
+
+    .nav-bar{
+        span{
+            gap:10px;
+        }
+    }
+}

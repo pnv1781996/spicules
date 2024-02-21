@@ -1,0 +1,64 @@
+.guarantee-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .guarantee-container{
+        text-align: center;
+        width:1440px;
+
+        .guarantee-content{
+            padding: 96px 0px 96px 0px;
+
+            .guarantee-heading{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+            .guarantee-subheading{
+
+            }
+            .eleSpacing{
+                margin-top: 60px;
+            } 
+            .teacher {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .image-container {
+                    position: relative;
+                    height: 480px;
+                    width: 384px;
+                    .image {
+                        height: 480px;
+                        width: 384px;
+                        object-fit: cover;
+                    }
+                }
+
+                .drawer {
+                    position: absolute; 
+                    bottom: 0;
+                    left: 0;
+                    height:240px;
+                    width: 384px;
+                    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)
+                    , rgba(0, 0, 0, 0.4));
+                    backdrop-filter: blur(8px); 
+                    color: white;
+              
+                    .drawer-content{
+                        padding:24px;
+                        span {
+                            text-align: left;
+                            display: block;
+                            margin-bottom: 5px; 
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
