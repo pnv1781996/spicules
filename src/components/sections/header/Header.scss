@@ -1,0 +1,27 @@
+.main-header {
+    
+    .top-header{
+        height: 48px;
+        padding:0px, 80px, 0px, 80px;
+        background-color: var(--grey-bg);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .right-side{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            .coutry-dropdown{
+                width: 137px;
+                height: 32px;
+                // padding: 8px, 24px, 8px, 24px;
+                border-radius: 16px;
+                border: 1px;
+                border-color: var(--primary-color);
+                background-color: var(--white-color);
+            }
+        }
+    }
+}

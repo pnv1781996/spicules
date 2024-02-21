@@ -1,0 +1,44 @@
+.system-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 12px 32px rgba(0, 0, 0, 0.1);
+
+    .system-container{
+        width:1440px;
+        padding: 60px 0px;
+
+        .system-content {
+            .system-header {
+                display: flex;
+                align-items: center;
+                margin-top:50px;
+
+                .content{
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    height: 200px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                    .system1 {
+                        width:80%;
+                        button{
+                            font-size: 16px;
+                        }
+                    }
+                    .system1-img{
+                        img{
+                            height: 160px;
+                            width: 160px;
+                        }
+                    }
+                }
+                .blank{
+                    width:50%;
+                }
+            }
+        }
+    }
+}

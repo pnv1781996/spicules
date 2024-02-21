@@ -1,0 +1,36 @@
+.boxing-section{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   .boxing-container {
+        text-align: center;
+        width:1440px;
+
+        .eleSpacing {
+            margin-bottom: 50px;
+        }
+
+        .boxing-content {
+            padding: 60px 0px 60px 0px;
+
+            .boxing-counter{
+                padding: 50px 80px 50px 80px;
+            }
+
+            .counter {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                > div {
+                    text-align: center;
+                }
+            }
+        }
+        
+    }
+}

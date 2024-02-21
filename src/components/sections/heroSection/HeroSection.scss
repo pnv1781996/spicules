@@ -1,0 +1,144 @@
+.hero-section{
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 10rem 0 10rem;
+
+    .hero-content{
+        height: 310px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap:30px;
+        
+        .text-section{
+            width:70%;
+            .shared {
+                margin-bottom: 20px;
+            }
+        }
+        .form-section{
+            width:30%;
+            height: 310px;
+            padding: 32px;
+            border-radius: 16px;
+            gap: 24px;
+            background-color: rgba(255, 255, 255, 0.6);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+
+            .form-input{
+                .iti {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .iti__flag-container {
+                        width: 100px;
+                        height: 52px;
+                        background: white;
+                        border-radius: 16px;
+                        position: unset;
+                        margin-right: 10px;
+    
+                        .iti__selected-flag{
+                            justify-content: center;
+                        }
+                    }
+
+                    input.iti__tel-input, .iti input.iti__tel-input[type=text], .iti input.iti__tel-input[type=tel] {
+                        width:265px;
+                        height:52px;
+                        border-radius: 16px;
+                        background: white;
+                        padding-left: 20px;
+                        border: 0;
+                    }
+                }
+                
+            }
+            .form-submit {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 23px 0 23px;
+
+                button{
+                    margin-bottom: 20px;
+                }
+
+                .check-container {
+                    display: block;
+                    position: relative;
+                    cursor: pointer;
+                    font-size: 18px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none; 
+                    
+                    &:hover input ~ .checkmark {
+                        background-color: #ccc;
+                    }
+                    input:checked ~ .checkmark {
+                        background-color: var(--primary-color);
+                    }
+                    input:checked ~ .checkmark::after {
+                        display: block;
+                      }
+                    &::after {
+                        left: 9px;
+                        top: 5px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid white;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                    
+                    .checkbox {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 25px;
+                        width: 25px;
+                        background-color: var(--white-color);
+                        border-radius: 6px;
+                        text-align: start;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+
+                        &::after{
+                            left: 9px;
+                            top: 5px;
+                            width: 5px;
+                            height: 10px;
+                            border: solid white;
+                            border-width: 0 3px 3px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
